@@ -1,0 +1,40 @@
+{
+  "navItems": [
+    {
+      "name": "About"
+    },
+    {
+      "name": "Services"
+    },
+    {
+      "name": "Products"
+    },
+    {
+      "name": "Portfolio"
+    },
+    {
+      "name": "Blog"
+    },
+    {
+      "name": "Career"
+    },
+    {
+      "name": "Contact Us"
+    }
+  ],
+
+  "contactFormFields": [
+    {
+      "name": "Name"
+    },
+    {
+      "name": "Phone"
+    },
+    {
+      "name": "Website"
+    },
+    {
+      "name": "Requirement"
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hznmRaOnuqI=",
+  "dgSpecHash": "Z5ii8bCcgfY=",
   "success": true,
-  "projectFilePath": "E:\\Selenium\\C#\\selenium_tests\\selenium_tests.csproj",
+  "projectFilePath": "e:\\Selenium\\C#\\selenium_tests\\selenium_tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\imdeb\\.nuget\\packages\\microsoft.codecoverage\\17.11.1\\microsoft.codecoverage.17.11.1.nupkg.sha512",
     "C:\\Users\\imdeb\\.nuget\\packages\\microsoft.net.test.sdk\\17.11.1\\microsoft.net.test.sdk.17.11.1.nupkg.sha512",

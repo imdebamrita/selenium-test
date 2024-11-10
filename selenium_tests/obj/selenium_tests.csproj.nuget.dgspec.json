@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Selenium\\C#\\selenium_tests\\selenium_tests.csproj": {}
+    "e:\\Selenium\\C#\\selenium_tests\\selenium_tests.csproj": {}
   },
   "projects": {
-    "E:\\Selenium\\C#\\selenium_tests\\selenium_tests.csproj": {
+    "e:\\Selenium\\C#\\selenium_tests\\selenium_tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Selenium\\C#\\selenium_tests\\selenium_tests.csproj",
+        "projectUniqueName": "e:\\Selenium\\C#\\selenium_tests\\selenium_tests.csproj",
         "projectName": "selenium_tests",
-        "projectPath": "E:\\Selenium\\C#\\selenium_tests\\selenium_tests.csproj",
+        "projectPath": "e:\\Selenium\\C#\\selenium_tests\\selenium_tests.csproj",
         "packagesPath": "C:\\Users\\imdeb\\.nuget\\packages\\",
-        "outputPath": "E:\\Selenium\\C#\\selenium_tests\\obj\\",
+        "outputPath": "e:\\Selenium\\C#\\selenium_tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\imdeb\\AppData\\Roaming\\NuGet\\NuGet.Config"

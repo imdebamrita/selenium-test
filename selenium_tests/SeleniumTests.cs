@@ -4,7 +4,7 @@ using OpenQA.Selenium.Chrome;
 
 namespace selenium_tests;
 
-public class SeleniumTests
+public class InnovinationTest
 {
     [Test]
     [Category("Selenium")]
