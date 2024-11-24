@@ -1,5 +1,10 @@
-Feature: footerBtM
+Feature: Innovition test
 
 @footerBtM
-Scenario: The author, the title and the price of a book can be seen
+Scenario: Innovition testing : footer, contact information, header menus
     Given I validate the footer
+    Then I verify the contact information is displayed
+    Then I verify the Innovition logo is displayed
+    Then I verify the top header menus is displayed
+    Then I verify the secondary header menus is displayed
+    Then I verify the secondary header is sticky

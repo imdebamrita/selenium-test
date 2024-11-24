@@ -9,10 +9,11 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
+using TechTalk.SpecFlow;
 
 namespace InnovinationTest
 {
-    [TestFixture]
+    [Binding]
     public class HeaderMenuTests
     {
         private IWebDriver driver;
@@ -20,7 +21,7 @@ namespace InnovinationTest
         private string baseURL;
         private bool acceptNextAlert = true;
 
-        [SetUp]
+        [BeforeScenario]
         public void SetupTest()
         {
             ChromeOptions options = new ChromeOptions();
@@ -30,7 +31,7 @@ namespace InnovinationTest
             verificationErrors = new StringBuilder();
         }
 
-        [TearDown]
+        [AfterScenario]
         public void TeardownTest()
         {
             try
@@ -44,7 +45,7 @@ namespace InnovinationTest
             // Assert.AreEqual(string.Empty, verificationErrors.ToString());
         }
 
-        [Test]
+        [Then(@"I verify the Innovition logo is displayed")]
         public void ValidateInnovinationLogo()
         {
             // Label: Test
@@ -84,7 +85,7 @@ namespace InnovinationTest
             }
         }
 
-        [Test]
+        [Then(@"I verify the top header menus is displayed")]
         public void ValidateTopHeaderMenus()
         {
             try
@@ -108,7 +109,7 @@ namespace InnovinationTest
 
         }
 
-        [Test]
+        [Then(@"I verify the secondary header is sticky")]
         public void ValidateSecondaryHeaderIsSticky()
         {
             try
@@ -132,7 +133,7 @@ namespace InnovinationTest
 
         }
 
-        [Test]
+        [Then(@"I verify the secondary header menus is displayed")]
         public void ValidateSecondaryHeaderMenus()
         {
             try

@@ -12,7 +12,9 @@ using OpenQA.Selenium.Support.UI;
 
 namespace InnovinationTest
 {
-    [TestFixture]
+    using TechTalk.SpecFlow;
+
+    [Binding]
     public class ContactUsTests
     {
         private IWebDriver driver;
@@ -20,7 +22,7 @@ namespace InnovinationTest
         private string baseURL;
         private bool acceptNextAlert = true;
 
-        [SetUp]
+        [BeforeScenario]
         public void SetupTest()
         {
             ChromeOptions options = new ChromeOptions();
@@ -30,7 +32,7 @@ namespace InnovinationTest
             verificationErrors = new StringBuilder();
         }
 
-        [TearDown]
+        [AfterScenario]
         public void TeardownTest()
         {
             try
@@ -44,8 +46,9 @@ namespace InnovinationTest
             // Assert.AreEqual(string.Empty, verificationErrors.ToString());
         }
 
-        [Test]
-        [Category("ValidateContactPage")]
+        // [Test]
+        // [Category("ValidateContactPage")]
+        [Then(@"I verify the contact information is displayed")]
         public void ValidateContactPage()
         {
             try
@@ -78,16 +81,16 @@ namespace InnovinationTest
             }
         }
 
-        [AttributeUsage(AttributeTargets.Method, Inherited = false)]
-        public class TestContactPageAttribute : Attribute
-        {
-            public string Name { get; }
+        // [AttributeUsage(AttributeTargets.Method, Inherited = false)]
+        // public class TestContactPageAttribute : Attribute
+        // {
+        //     public string Name { get; }
 
-            public TestContactPageAttribute(string name)
-            {
-                Name = name;
-            }
-        }
+        //     public TestContactPageAttribute(string name)
+        //     {
+        //         Name = name;
+        //     }
+        // }
 
 
         public class RootObject

@@ -13,7 +13,9 @@
           "NUnit3TestAdapter": "4.6.0",
           "Selenium.Support": "4.25.0",
           "Selenium.WebDriver": "4.25.0",
-          "SpecFlow": "3.9.74"
+          "SpecFlow": "3.9.74",
+          "SpecFlow.Tools.MsBuild.Generation": "3.9.74",
+          "SpecFlow.NUnit": "3.9.74"
         },
         "runtime": {
           "selenium_tests.dll": {}
@@ -435,6 +437,24 @@
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.8.28882"
           }
+        }
+      },
+      "SpecFlow.NUnit/3.9.74": {
+        "dependencies": {
+          "NUnit": "4.2.2",
+          "SpecFlow": "3.9.74",
+          "SpecFlow.Tools.MsBuild.Generation": "3.9.74"
+        },
+        "runtime": {
+          "lib/net6.0/TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll": {
+            "assemblyVersion": "3.9.0.0",
+            "fileVersion": "3.9.74.14555"
+          }
+        }
+      },
+      "SpecFlow.Tools.MsBuild.Generation/3.9.74": {
+        "dependencies": {
+          "SpecFlow": "3.9.74"
         }
       },
       "System.AppContext/4.1.0": {
@@ -1177,6 +1197,20 @@
       "sha512": "sha512-lVCC/Rie7N5rFoc7YxPS0nneLfsWSTIMMlkndwxhaD8MxBp3Bsv1HeiVjVwXCjWaQeoqZcvIy52fF5Xit00ZLw==",
       "path": "specflow.internal.json/1.0.8",
       "hashPath": "specflow.internal.json.1.0.8.nupkg.sha512"
+    },
+    "SpecFlow.NUnit/3.9.74": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nMPLztTT5IZDMnvNCUxklqaM+agn4kjuNy/qAcYQQOxau2G1MF73UxhL9OXjJQaEuPuyT8gJvXudOYCFZWztxA==",
+      "path": "specflow.nunit/3.9.74",
+      "hashPath": "specflow.nunit.3.9.74.nupkg.sha512"
+    },
+    "SpecFlow.Tools.MsBuild.Generation/3.9.74": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-I/9OvmKOohJqIUNJ0xGYJCWfL6WKDaes8OoOAD/2yhGX+tzC5ofs9yqkP9Cu/xfnIx+11IR3pZs7YhBhGAcgWQ==",
+      "path": "specflow.tools.msbuild.generation/3.9.74",
+      "hashPath": "specflow.tools.msbuild.generation.3.9.74.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",

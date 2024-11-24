@@ -73,6 +73,14 @@
             "SpecFlow": {
               "target": "Package",
               "version": "[3.9.74, )"
+            },
+            "SpecFlow.Tools.MsBuild.Generation": {
+              "target": "Package",
+              "version": "[3.9.74, )"
+            },
+            "Specflow.NUnit": {
+              "target": "Package",
+              "version": "[3.9.74, )"
             }
           },
           "imports": [

@@ -112,3 +112,5 @@ E:\Selenium\C#\selenium_tests\obj\Debug\net8.0\refint\selenium_tests.dll
 E:\Selenium\C#\selenium_tests\obj\Debug\net8.0\selenium_tests.pdb
 E:\Selenium\C#\selenium_tests\obj\Debug\net8.0\selenium_tests.genruntimeconfig.cache
 E:\Selenium\C#\selenium_tests\obj\Debug\net8.0\ref\selenium_tests.dll
+e:\Selenium\C#\selenium_tests\bin\Debug\net8.0\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+e:\Selenium\C#\selenium_tests\obj\Debug\net8.0\selenium_tests.sourcelink.json
