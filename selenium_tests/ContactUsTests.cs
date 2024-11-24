@@ -45,74 +45,6 @@ namespace InnovinationTest
         }
 
         [Test]
-        public void ValidateInnovinationLogo()
-        {
-            // Label: Test
-            // ERROR: Caught exception [ERROR: Unsupported command [resizeWindow | 1536,713 | ]]
-            try
-            {
-
-                driver.Navigate().GoToUrl("https://www.innovination.com/");
-                WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-                IWebElement headerLogo = driver.FindElement(By.XPath("(//div[contains(@class, 'header_area_container')]//img[contains(@src, 'logo-header')])[1]"));
-
-                Boolean isLogoDisplayed = headerLogo.Displayed;
-                if (isLogoDisplayed)
-                {
-                    Console.WriteLine("Logo is displayed");
-                }
-                else
-                {
-                    Console.WriteLine("Logo is not displayed");
-                }
-                // Assert.That(headerLogo, Is.EqualTo(true), $"Expected {true}");
-                // Assert.That(true, Is.Equals(headerLogo));
-                // Assert.AreEqual(true, headerLogo.Displayed);
-                // validateElements(headerLogo);
-                Actions action = new Actions(driver);
-                IWebElement element = driver.FindElement(By.XPath("(//div[contains(@class, 'header_area_container')]//li[contains(@id, 'menu-item')]//span[contains(text(), 'Services')])[1]"));
-                // var elements = wait.Until(element..ElementIsVisible(By.Id(elementId)));
-                action.MoveToElement(element).Perform();
-                driver.FindElement(By.XPath("//*[text() = \"Website Development\"]")).Click();
-                // Assert.Equals()
-                //(//div[contains(@class, 'header_area_container')]//li[contains(@id, 'menu-item')]//span[contains(text(), 'Services')])[1]
-            }
-            catch (System.Exception)
-            {
-
-                throw;
-            }
-        }
-
-        [Test]
-        public void ValidateHeaderMenus()
-        {
-            try
-            {
-                driver.Navigate().GoToUrl("https://www.innovination.com/");
-                WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-                string jsonFilePath = @"..\..\..\data.json";
-                // var jsonString = File.ReadAllText(@"..\..\..\data.json");
-                string jsonContent = File.ReadAllText(jsonFilePath);
-
-                RootObject rootObject = JsonConvert.DeserializeObject<RootObject>(jsonContent);
-                foreach (NavItem navItem in rootObject.NavItems)
-                {
-                    IWebElement element = driver.FindElement(By.XPath($"(//div[contains(@class, 'header_area_container')]//li[contains(@id, 'menu-item')]//span[contains(text(), '{navItem.Name}')])[1]"));
-                    Actions action = new Actions(driver);
-                    action.MoveToElement(element).Perform();
-                    Thread.Sleep(500);
-                }
-            }
-            catch (System.Exception)
-            {
-
-                throw;
-            }
-
-        }
-
-        [Test]
         [Category("ValidateContactPage")]
         public void ValidateContactPage()
         {
@@ -227,3 +159,9 @@ namespace InnovinationTest
         }
     }
 }
+
+
+// top header
+// secondary header
+// footer
+// make the file structure correct
